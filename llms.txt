@@ -1,0 +1,49 @@
+# EMAD gUG (haftungsbeschränkt)
+
+> Gemeinnütziges Unternehmen mit Sitz in München, Deutschland.
+> Förderung von Wissenschaft, Forschung und Religion im Sinne des §52 AO.
+
+EMAD gUG (haftungsbeschränkt) entwickelt digitale Bildungsangebote und arbeitet
+an moderner KI-Technologie. Das Unternehmen ist selbstlos tätig und verfolgt
+nicht in erster Linie eigenwirtschaftliche Zwecke.
+
+## Stammdaten
+
+- **Firma:** EMAD gUG (haftungsbeschränkt)
+- **Tagline:** Ethical Machine & AI Development
+- **Sitz:** Nawiaskystraße 27, 81735 München, Deutschland
+- **Handelsregister:** HRB 311335, Amtsgericht München
+- **Gegründet:** 12. Januar 2026
+- **Stammkapital:** 1.000 EUR
+- **Rechtsform:** Unternehmergesellschaft (haftungsbeschränkt), gemeinnützig
+- **Gemeinnützigkeit:** Förderung von Wissenschaft, Forschung und Religion (§52 AO)
+
+## Geschäftsführung
+
+Drei Geschäftsführer mit Einzelvertretungsbefugnis:
+
+- Meris Cerić
+- Damir Mujaković
+- Emir Muminović
+
+## Unternehmenszweck
+
+Die Gesellschaft fördert Wissenschaft, Forschung und Religion gemäß §52 AO.
+Schwerpunkte:
+
+- Entwicklung, Pflege und Bereitstellung neuer Sprachmodelle künstlicher Intelligenz
+- Kooperation mit Hochschulen und Bildungseinrichtungen zur wissenschaftlichen
+  Weiterentwicklung von KI
+- Digitale Plattformen für quellenbasiertes Wissen
+- Förderung des interreligiösen Dialogs durch sachliche Vermittlung
+- Zusammenarbeit mit anerkannten Gelehrten und Institutionen zur Qualitätssicherung
+
+## Ressourcen
+
+- [Startseite](https://emad.digital/): Überblick und Vision
+- [Impressum](https://emad.digital/impressum.html): Pflichtangaben nach §5 TMG
+- [Datenschutzerklärung](https://emad.digital/datenschutz.html): DSGVO-Informationen
+
+## Kontakt
+
+Kontaktdaten stehen im [Impressum](https://emad.digital/impressum.html).
