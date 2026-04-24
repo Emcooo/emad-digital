@@ -170,41 +170,74 @@ a:hover {
 	color: var(--accent-hover);
 }
 
-/* Click-to-reveal contact (scraper protection) */
+/* Click-to-copy contact (scraper protection; rendered as image) */
 .reveal {
-	display: inline-flex;
-	align-items: center;
-	gap: 6px;
-	color: var(--accent);
-	text-decoration: underline;
-	text-decoration-thickness: 1px;
-	text-underline-offset: 3px;
+	display: inline-block;
 	cursor: pointer;
 	user-select: none;
 	background: none;
 	border: none;
-	padding: 0;
-	font: inherit;
-	transition: color 0.15s ease;
-}
-
-.reveal::before {
-	content: '•••';
-	font-family: var(--display);
-	letter-spacing: 0.1em;
-	font-size: 0.85em;
-	color: var(--muted);
-	margin-right: 4px;
+	padding: 6px 10px;
+	margin: 2px 0;
+	border-radius: 8px;
+	transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .reveal:hover {
-	color: var(--accent-hover);
+	background: rgba(28, 173, 210, 0.08);
+}
+
+.reveal:active {
+	transform: scale(0.98);
 }
 
 .reveal:focus-visible {
 	outline: 2px solid var(--accent);
-	outline-offset: 3px;
-	border-radius: 2px;
+	outline-offset: 2px;
+}
+
+.reveal--img img {
+	display: block;
+	height: 28px;
+	width: auto;
+	user-select: none;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal {
+		transition: none;
+	}
+}
+
+/* Toast feedback on copy */
+.toast {
+	position: fixed;
+	left: 50%;
+	bottom: 32px;
+	transform: translate(-50%, 12px);
+	background: var(--card);
+	color: var(--ink);
+	border: 1px solid var(--line);
+	border-radius: 12px;
+	padding: 10px 18px;
+	font-family: var(--display);
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	box-shadow:
+		0 20px 40px rgba(0, 0, 0, 0.5),
+		0 0 0 1px rgba(28, 173, 210, 0.15);
+	opacity: 0;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	pointer-events: none;
+	z-index: 10;
+	max-width: 90vw;
+}
+
+.toast--in {
+	opacity: 1;
+	transform: translate(-50%, 0);
 }
 
 /* Legal pages */
