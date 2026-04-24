@@ -3,22 +3,39 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>EMAD gUG (haftungsbeschränkt)</title>
+		<title>EMAD gUG (haftungsbeschränkt) — Ethical Machine & AI Development</title>
 		<meta
 			name="description"
-			content="EMAD gUG (haftungsbeschränkt) — gemeinnütziges Unternehmen mit Sitz in München. Förderung von Wissenschaft, Forschung und Religion im Sinne des §52 AO."
+			content="EMAD gUG (haftungsbeschränkt) — gemeinnütziges Unternehmen mit Sitz in München. Ethical Machine & AI Development. Förderung von Wissenschaft, Forschung und Religion im Sinne des §52 AO."
 		/>
 		<meta name="robots" content="index, follow" />
-		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="EMAD gUG (haftungsbeschränkt)" />
+		<meta
+			property="og:description"
+			content="Gemeinnütziges Unternehmen mit Sitz in München. Ethical Machine & AI Development."
+		/>
+		<meta property="og:image" content="https://emad.digital/emad-logo.png" />
+		<meta property="og:url" content="https://emad.digital/" />
+		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="canonical" href="https://emad.digital/" />
 		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
 		<main class="wrap">
 			<header class="hero">
-				<p class="eyebrow">gemeinnütziges Unternehmen</p>
+				<div class="logo">
+					<img
+						src="/emad-logo.png"
+						alt="EMAD gUG — Ethical Machine & AI Development Logo"
+						width="200"
+						height="200"
+					/>
+				</div>
+				<p class="eyebrow">Gemeinnütziges Unternehmen</p>
 				<h1>EMAD gUG<span class="subtle"> (haftungsbeschränkt)</span></h1>
-				<p class="tagline">Sitz in München · HRB 311335 · gegründet 2026</p>
+				<p class="tagline">Ethical Machine &amp; AI Development · München</p>
 			</header>
 
 			<section class="intro">
@@ -42,7 +59,8 @@
 					Nawiaskystraße 27<br />
 					81735 München<br />
 					<br />
-					<a href="mailto:impressum@emad.digital">impressum@emad.digital</a>
+					<a href="mailto:impressum@emad.digital">impressum@emad.digital</a><br />
+					<a href="tel:+4915229594933">+49 152 29594933</a>
 				</address>
 			</section>
 		</main>
@@ -53,13 +71,13 @@
 				<span aria-hidden="true">·</span>
 				<a href="/datenschutz.html">Datenschutz</a>
 			</nav>
-			<p class="copy">© <span id="y"></span> EMAD gUG (haftungsbeschränkt)</p>
+			<p class="copy">© <span id="y"></span> EMAD gUG (haftungsbeschränkt) · HRB 311335</p>
 		</footer>
 
 		<script>
 			document.getElementById('y').textContent = new Date().getFullYear();
 		</script>
-		<!-- Cloudflare Web Analytics (cookie-frei, DSGVO-konform) -->
+		<!-- Cloudflare Web Analytics (cookie-frei, DSGVO-konform). Beacon-Token wird nach Cloudflare-Pages-Setup eingesetzt. -->
 		<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"REPLACE_BEACON_TOKEN"}'></script>
 	</body>
 </html>
