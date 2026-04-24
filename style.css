@@ -1,28 +1,18 @@
 :root {
-	--ink: #0a2540;
-	--ink-soft: #2d4356;
-	--muted: #6d7f8d;
-	--line: #e3e0d8;
-	--paper: #f7f5f0;
-	--accent: #11496f;
-	--accent-hover: #0a2540;
+	--ink: #e8e4dc;
+	--ink-soft: #b8bfcc;
+	--muted: #70808f;
+	--line: #1a2430;
+	--paper: #0a0e14;
+	--card: #11182a;
+	--accent: #1cadd2;
+	--accent-hover: #5cd4ea;
 	--max: 680px;
-	--serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
-	--sans:
-		system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-		sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--ink: #e4e1d8;
-		--ink-soft: #c0bdb3;
-		--muted: #7d8a96;
-		--line: #1f2a36;
-		--paper: #0a121b;
-		--accent: #5cb8d4;
-		--accent-hover: #1cadd2;
-	}
+	--display:
+		'Montserrat', -apple-system, 'Segoe UI', system-ui, sans-serif;
+	--body:
+		'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif;
+	--sans: var(--body);
 }
 
 * {
@@ -36,8 +26,8 @@ html {
 
 body {
 	margin: 0;
-	font-family: var(--serif);
-	font-size: 18px;
+	font-family: var(--body);
+	font-size: 17px;
 	line-height: 1.65;
 	color: var(--ink);
 	background: var(--paper);
@@ -57,11 +47,11 @@ body {
 }
 
 .eyebrow {
-	font-family: var(--sans);
+	font-family: var(--display);
 	text-transform: uppercase;
-	letter-spacing: 0.18em;
+	letter-spacing: 0.22em;
 	font-size: 11px;
-	font-weight: 500;
+	font-weight: 600;
 	color: var(--muted);
 	margin: 0 0 14px;
 }
@@ -69,7 +59,7 @@ body {
 /* Hero */
 .hero {
 	text-align: center;
-	margin-bottom: 48px;
+	margin-bottom: 56px;
 }
 
 .hero .logo {
@@ -80,8 +70,8 @@ body {
 	border-radius: 28px;
 	overflow: hidden;
 	box-shadow:
-		0 10px 40px rgba(10, 37, 64, 0.18),
-		0 2px 8px rgba(10, 37, 64, 0.08);
+		0 20px 60px rgba(28, 173, 210, 0.2),
+		0 4px 14px rgba(0, 0, 0, 0.5);
 }
 
 .hero .logo img {
@@ -92,9 +82,10 @@ body {
 }
 
 .hero h1 {
-	font-weight: 500;
-	font-size: 36px;
-	line-height: 1.15;
+	font-family: var(--display);
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 1.1;
 	margin: 0 0 10px;
 	letter-spacing: -0.01em;
 	color: var(--ink);
@@ -102,17 +93,19 @@ body {
 
 .hero h1 .subtle {
 	color: var(--muted);
-	font-weight: 400;
-	font-size: 20px;
+	font-weight: 500;
+	font-size: 18px;
 	letter-spacing: 0;
 }
 
 .hero .tagline {
-	font-family: var(--sans);
+	font-family: var(--display);
 	color: var(--muted);
-	font-size: 14px;
+	font-size: 13px;
+	font-weight: 500;
 	margin: 0;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 }
 
 /* Intro text */
@@ -149,9 +142,9 @@ body {
 
 .contact h2,
 .legal section h2 {
-	font-family: var(--sans);
+	font-family: var(--display);
 	text-transform: uppercase;
-	letter-spacing: 0.16em;
+	letter-spacing: 0.18em;
 	font-size: 11px;
 	font-weight: 600;
 	color: var(--muted);
@@ -161,7 +154,7 @@ body {
 address {
 	font-style: normal;
 	color: var(--ink-soft);
-	line-height: 1.75;
+	line-height: 1.8;
 }
 
 /* Links */
@@ -177,13 +170,52 @@ a:hover {
 	color: var(--accent-hover);
 }
 
+/* Click-to-reveal contact (scraper protection) */
+.reveal {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--accent);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	cursor: pointer;
+	user-select: none;
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	transition: color 0.15s ease;
+}
+
+.reveal::before {
+	content: '•••';
+	font-family: var(--display);
+	letter-spacing: 0.1em;
+	font-size: 0.85em;
+	color: var(--muted);
+	margin-right: 4px;
+}
+
+.reveal:hover {
+	color: var(--accent-hover);
+}
+
+.reveal:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
 /* Legal pages */
 .legal h1 {
-	font-weight: 500;
+	font-family: var(--display);
+	font-weight: 700;
 	font-size: 32px;
 	line-height: 1.2;
 	margin: 0 0 8px;
 	letter-spacing: -0.01em;
+	color: var(--ink);
 }
 
 .legal .eyebrow {
@@ -222,9 +254,12 @@ a:hover {
 }
 
 .back {
-	font-family: var(--sans);
-	font-size: 14px;
+	font-family: var(--display);
+	font-size: 13px;
+	font-weight: 500;
 	margin: 0 0 32px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 }
 
 .back a {
@@ -241,9 +276,10 @@ a:hover {
 	border-top: 1px solid var(--line);
 	padding: 32px 28px 40px;
 	text-align: center;
-	font-family: var(--sans);
+	font-family: var(--display);
 	color: var(--muted);
-	font-size: 13px;
+	font-size: 12px;
+	letter-spacing: 0.04em;
 }
 
 .foot nav {
@@ -275,7 +311,9 @@ a:hover {
 
 .foot .copy {
 	margin: 0;
-	font-size: 12px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 @media (max-width: 520px) {
@@ -283,7 +321,7 @@ a:hover {
 		padding: 40px 22px 32px;
 	}
 	body {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.hero .logo {
 		width: 160px;
@@ -294,7 +332,7 @@ a:hover {
 		font-size: 28px;
 	}
 	.hero h1 .subtle {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.legal h1 {
 		font-size: 26px;

@@ -20,6 +20,9 @@
 		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="canonical" href="https://emad.digital/" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
@@ -59,8 +62,24 @@
 					Nawiaskystraße 27<br />
 					81735 München<br />
 					<br />
-					<a href="mailto:impressum@emad.digital">impressum@emad.digital</a><br />
-					<a href="tel:+4915229594933">+49 152 29594933</a>
+					<button
+						type="button"
+						class="reveal"
+						data-type="mail"
+						data-u="aW1wcmVzc3VtQGVtYWQuZGlnaXRhbA=="
+						aria-label="E-Mail-Adresse anzeigen"
+					>
+						E-Mail anzeigen
+					</button><br />
+					<button
+						type="button"
+						class="reveal"
+						data-type="tel"
+						data-u="KzQ5IDE1MiAyOTU5NDkzMw=="
+						aria-label="Telefonnummer anzeigen"
+					>
+						Telefon anzeigen
+					</button>
 				</address>
 			</section>
 		</main>
@@ -77,6 +96,7 @@
 		<script>
 			document.getElementById('y').textContent = new Date().getFullYear();
 		</script>
+		<script src="/obf.js" defer></script>
 		<!-- Cloudflare Web Analytics (cookie-frei, DSGVO-konform). Beacon-Token wird nach Cloudflare-Pages-Setup eingesetzt. -->
 		<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"REPLACE_BEACON_TOKEN"}'></script>
 	</body>
