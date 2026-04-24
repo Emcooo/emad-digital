@@ -1,0 +1,274 @@
+:root {
+	--ink: #111111;
+	--ink-soft: #3a3a3a;
+	--muted: #6b6b6b;
+	--line: #e7e4de;
+	--paper: #f7f5f0;
+	--accent: #1a1a1a;
+	--max: 640px;
+	--serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+	--sans:
+		system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+		sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--ink: #f2ede4;
+		--ink-soft: #c8c2b5;
+		--muted: #8a8477;
+		--line: #2a2825;
+		--paper: #15140f;
+		--accent: #f2ede4;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: var(--serif);
+	font-size: 18px;
+	line-height: 1.6;
+	color: var(--ink);
+	background: var(--paper);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+	width: 100%;
+	max-width: var(--max);
+	margin: 0 auto;
+	padding: 80px 28px 48px;
+	flex: 1;
+}
+
+.eyebrow {
+	font-family: var(--sans);
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	font-size: 11px;
+	font-weight: 500;
+	color: var(--muted);
+	margin: 0 0 12px;
+}
+
+.hero h1 {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.15;
+	margin: 0 0 12px;
+	letter-spacing: -0.01em;
+}
+
+.hero h1 .subtle {
+	color: var(--muted);
+	font-weight: 400;
+	font-size: 22px;
+	letter-spacing: 0;
+}
+
+.hero .tagline {
+	font-family: var(--sans);
+	color: var(--muted);
+	font-size: 14px;
+	margin: 0 0 48px;
+}
+
+.intro {
+	border-top: 1px solid var(--line);
+	padding-top: 32px;
+	margin-bottom: 48px;
+}
+
+.intro p {
+	margin: 0 0 16px;
+	color: var(--ink-soft);
+}
+
+.intro p:last-child {
+	margin-bottom: 0;
+}
+
+.intro strong {
+	color: var(--ink);
+	font-weight: 600;
+}
+
+.muted {
+	color: var(--muted) !important;
+	font-size: 0.95em;
+}
+
+.contact {
+	border-top: 1px solid var(--line);
+	padding-top: 32px;
+}
+
+.contact h2 {
+	font-family: var(--sans);
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--muted);
+	margin: 0 0 14px;
+}
+
+address {
+	font-style: normal;
+	color: var(--ink-soft);
+	line-height: 1.7;
+}
+
+a {
+	color: var(--ink);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	transition: opacity 0.15s ease;
+}
+
+a:hover {
+	opacity: 0.65;
+}
+
+/* Legal pages */
+.legal h1 {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.2;
+	margin: 0 0 8px;
+	letter-spacing: -0.01em;
+}
+
+.legal .eyebrow {
+	margin-bottom: 40px;
+}
+
+.legal section {
+	border-top: 1px solid var(--line);
+	padding-top: 28px;
+	margin-top: 28px;
+}
+
+.legal section:first-of-type {
+	border-top: none;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.legal h2 {
+	font-family: var(--sans);
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--muted);
+	margin: 0 0 14px;
+}
+
+.legal p,
+.legal ul {
+	color: var(--ink-soft);
+	margin: 0 0 14px;
+}
+
+.legal p:last-child,
+.legal ul:last-child {
+	margin-bottom: 0;
+}
+
+.legal ul {
+	padding-left: 20px;
+}
+
+.legal ul li {
+	margin-bottom: 4px;
+}
+
+.back {
+	font-family: var(--sans);
+	font-size: 14px;
+	margin: 0 0 32px;
+}
+
+.back a {
+	color: var(--muted);
+	text-decoration: none;
+}
+
+.back a:hover {
+	color: var(--ink);
+}
+
+/* Footer */
+.foot {
+	border-top: 1px solid var(--line);
+	padding: 32px 28px 40px;
+	text-align: center;
+	font-family: var(--sans);
+	color: var(--muted);
+	font-size: 13px;
+}
+
+.foot nav {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.foot nav a {
+	color: var(--ink-soft);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.foot nav a:hover {
+	color: var(--ink);
+	text-decoration: underline;
+}
+
+.foot nav a[aria-current='page'] {
+	color: var(--ink);
+}
+
+.foot nav span {
+	color: var(--muted);
+}
+
+.foot .copy {
+	margin: 0;
+	font-size: 12px;
+}
+
+@media (max-width: 520px) {
+	.wrap {
+		padding: 48px 22px 32px;
+	}
+	body {
+		font-size: 17px;
+	}
+	.hero h1 {
+		font-size: 32px;
+	}
+	.hero h1 .subtle {
+		font-size: 18px;
+	}
+	.legal h1 {
+		font-size: 26px;
+	}
+}
