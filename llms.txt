@@ -38,6 +38,13 @@ Schwerpunkte:
 - Förderung des interreligiösen Dialogs durch sachliche Vermittlung
 - Zusammenarbeit mit anerkannten Gelehrten und Institutionen zur Qualitätssicherung
 
+## Angebote
+
+- **Islamify.ai** (https://islamify.ai): KI-Plattform für islamische Bildung
+  und quellenbasiertes Wissen, entwickelt und betrieben von der EMAD gUG.
+  Die Domain islamify.ai einschließlich ihrer Subdomains (chat.islamify.ai,
+  auth.islamify.ai) gehört der EMAD gUG und wird von ihr kontrolliert.
+
 ## Ressourcen
 
 - [Startseite](https://emad.digital/): Überblick und Vision

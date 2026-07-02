@@ -134,6 +134,27 @@ body {
 	font-size: 0.95em;
 }
 
+/* Projects */
+.projects {
+	border-top: 1px solid var(--line);
+	padding-top: 40px;
+	margin-bottom: 48px;
+}
+
+.projects p {
+	margin: 0 0 14px;
+	color: var(--ink-soft);
+}
+
+.projects p:last-child {
+	margin-bottom: 0;
+}
+
+.projects strong {
+	color: var(--ink);
+	font-weight: 600;
+}
+
 /* Contact */
 .contact {
 	border-top: 1px solid var(--line);
@@ -141,6 +162,7 @@ body {
 }
 
 .contact h2,
+.projects h2,
 .legal section h2 {
 	font-family: var(--display);
 	text-transform: uppercase;
